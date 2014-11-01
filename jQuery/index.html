@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>テーブルの行追加</title>
+  <link rel="stylesheet" href="/css/common.css">
+  <script src="/js/jquery.js"></script>
+  <script>
+  <!--
+      $(document).ready(function(){
+
+        $('#content input[name="append"]').bind('click', function(){
+          
+            var origin = $('#001 .origin');
+            var clone = origin.clone();
+
+            $('#001').append(clone.removeClass('origin'));
+
+            $('#001 tr:last input[name="name03"]').bind('click', function(){
+                alert('データを追加します');
+            }).attr({ 
+                'value': '追加する'
+            });
+          
+        }); // end of $('#content input[name="append"]').click(
+
+	        $('#content input[name="remove"]').bind('click', function(){
+	            $('#001 tr:last').remove();
+	        }); // end of $('#content input[name="remove"]').click(
+
+      });
+  -->
+  </script>
+  <style>
+  <!--
+
+    #content { 
+
+    }
+
+    #content form {
+         width : 200px;
+         height: 100px;
+         border: 1px solid #cccccc;
+    }
+
+    #content .origin {
+        display : none;
+    }
+
+  //-->
+  </style>
+  </head>
+  <body>
+    <div id="content">
+      <input type="button" name="append" value="行追加">
+      <input type="button" name="remove" value="行削除">
+      <table border="1" id="001">
+        <tr class="origin">
+          <td><input type="text" name="name01" value=""></td>
+          <td><input type="text" name="name02" value=""></td>
+          <td><input type="button" name="name03" value="更新する"></td>
+        </tr>
+        <tr>
+          <td><input type="text" name="name01" value="aaa"></td>
+          <td><input type="text" name="name02" value="aaa"></td>
+          <td><input type="button" name="name03" value="更新する"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
