@@ -61,7 +61,7 @@
       <br>
       <br>
       <form name="form2" method="POST" action="index.php">
-        edit from work
+        edit from github
         <br>
         <br>
         <input type="submit" value="送信">
