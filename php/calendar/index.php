@@ -61,7 +61,7 @@
       <br>
       <br>
       <form name="form2" method="POST" action="index.php">
-        edit from github
+        edit from webmatrix
         <br>
         <br>
         <input type="submit" value="送信">
