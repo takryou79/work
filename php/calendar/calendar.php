@@ -177,7 +177,6 @@
 //echo '<br>';
 
     echo '        <table>' . PHP_EOL;
-
     echo '          <tr>' . PHP_EOL;
     ## 日付切り替え部分
     echo '            <th date="' . $prev_year . '">&lt;&lt;</th>' . PHP_EOL;
@@ -186,7 +185,6 @@
     echo '            <th date="' . $next_month . '">&gt;</th>' . PHP_EOL;
     echo '            <th date="' . $next_year . '">&gt;&gt;</th>' . PHP_EOL;
     echo '          </tr>' . PHP_EOL;
-
     echo '          <tr>' . PHP_EOL;
     ## 日付がない部分（1日より前）
     for ($week=0; $week<$first_day_week; $week++) {
