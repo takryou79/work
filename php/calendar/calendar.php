@@ -36,10 +36,16 @@
               }).get();
 //alert(parent_form_name);
               var parent_form = window.opener.$('form[name="' + parent_form_name + '"]')
-
-              parent_form.find(':input[name="current_date"]').val(date);
-//              parent_form.attr('action', '');
-              parent_form.submit();
+              /*
+               * POST
+               **/
+//              parent_form.find(':input[name="current_date"]').val(date);
+//              parent_form.submit();
+              /*
+               * GET
+               **/
+              var action = parent_form.attr('action')
+              window.opener.location.href = action + '&current_date=' + encodeURI(date) ;
 
               window.focus();
 //              window.close();
